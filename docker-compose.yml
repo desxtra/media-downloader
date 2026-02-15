@@ -1,0 +1,12 @@
+services:
+  media-downloader:
+    image: media-downloader:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./downloads:/media-downloader/downloads
+      - ./public:/media-downloader/public
+    environment:
+      - NODE_ENV=production
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
