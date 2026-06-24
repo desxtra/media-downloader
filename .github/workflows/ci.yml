@@ -7,6 +7,8 @@ on:
 jobs:
   build-dan-push:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     steps:
       - name: Take Code
         uses: actions/checkout@v4

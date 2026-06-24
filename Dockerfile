@@ -1,5 +1,9 @@
 FROM debian:12-slim
 
+LABEL org.opencontainers.image.source="https://github.com"
+LABEL org.opencontainers.image.title="media-downloader"
+LABEL org.opencontainers.image.description="Container for media downloading"
+
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PYTHONUNBUFFERED=1
 ENV BUN_INSTALL=/root/.bun
