@@ -15,7 +15,7 @@ A web-based media downloader that supports YouTube, Facebook, Instagram, TikTok,
 
 ### Prerequisites
 
-- Ubuntu server (tested on 20.04+)
+- Ubuntu server (tested on 20.04+) or Docker
 - Internet connection
 
 ### Installation
@@ -24,6 +24,12 @@ A web-based media downloader that supports YouTube, Facebook, Instagram, TikTok,
    ```bash
    chmod +x setup.sh
    ./setup.sh
+   ```
+
+**OR use docker compose**
+   ```bash
+   docker compose up --build
+   ```
 
 2. **Deployment**
 

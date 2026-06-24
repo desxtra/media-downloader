@@ -1,5 +1,8 @@
 services:
   media-downloader:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: media-downloader:latest
     ports:
       - "3000:3000"
