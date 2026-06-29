@@ -23,7 +23,7 @@ try {
 }
 
 // User session management
-const userSessions = new Map(); // sessionId -> { lastActivity: timestamp, files: [] }
+const userSessions = new Map); // sessionId -> { lastActivity: timestamp, files: [] }
 const fileExpirations = new Map(); // filePath -> { sessionId, expirationTime }
 
 // Generate unique session ID
